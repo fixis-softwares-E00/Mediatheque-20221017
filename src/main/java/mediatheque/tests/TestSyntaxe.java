@@ -1,10 +1,54 @@
 package mediatheque.tests;
 
-import org.omg.Messaging.SyncScopeHelper;
-
+import java.time.LocalTime;
 import java.time.Year;
 
 public class TestSyntaxe {
+
+    /**
+     * Méthode destinée à faire une salutation simple.
+     * Elle affiche également l'heure courante.
+     */
+    public static void saluer()
+    {
+        System.out.println("Bonjour Monsieur");
+        System.out.println("Il est actuellement " + LocalTime.now() );
+    }
+
+    public static double calculerPerimetreCercle( double rayon)
+    {
+        return 2 * Math.PI * rayon;
+    }
+
+    //Créer une autre méthode "saluer" qui prend en compte un nom de personne et un genre (1=Monsieur, 2=Madame).
+    //Exemple d'affichage: Bonjour Monsieur DUPOND
+
+    /**
+     * Cette méthode affiche une salutation personnalisée.
+     *
+     * @param nom
+     * C'est le nom de famille de la personne qui est saluée.
+     *
+     * @param genre
+     * Valeur égale à 1 ou 2.
+     */
+    public static void saluer( String nom, int genre)
+    {
+        switch ( genre )
+        {
+            case 1:
+                System.out.println("Bonjour Monsieur "+nom);
+                break;
+            case 2:
+                System.out.println("Bonjour Madame "+nom);
+                break;
+            default:
+                System.out.println("Bonjour "+nom);
+
+        }
+    }
+
+
 
     public static void main(String[] args) {
 
@@ -92,7 +136,7 @@ public class TestSyntaxe {
 
 
         //Tableaux
-        String joursDeLaSemaine[] = {"Lundi","Mardi","Mercredi"};
+        String[] joursDeLaSemaine = {"Lundi","Mardi","Mercredi"};
         System.out.println( joursDeLaSemaine[1] );
 
         String[] codesPostaux = new String[ 40000 ];
@@ -113,8 +157,20 @@ public class TestSyntaxe {
         System.out.println( annuaire[1][2]);
 
 
+        //Affichage de tous les jours de la semaine.
+        for (  String unJour  : joursDeLaSemaine )
+        {
+            System.out.println( unJour );
+        }
 
+        //Invocation de la méthode "saluer".
+        saluer();
 
+        //Invocation de la méthode "calculerPerimetreCercle"
+        double perimetre = calculerPerimetreCercle(12);
+        System.out.println( "Périmètre du cercle: " + perimetre );
+
+        saluer("DUPOND",1);
 
 
     }
