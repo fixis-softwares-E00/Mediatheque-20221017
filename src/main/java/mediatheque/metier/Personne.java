@@ -29,7 +29,7 @@ public class Personne {
         setPrenom(prenom);
         //Création d'une carte et placement de celle-ci dans la poche de la personne
         Carte c1 = new Carte( this );
-        setCarte( c1 );
+        setCarte( null );
     }
 
     public Personne(String nom, String prenom, String dateNaissance)
