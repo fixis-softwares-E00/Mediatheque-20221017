@@ -1,6 +1,9 @@
 package mediatheque.metier;
 
-public class Actif extends Adherent {
+import fixis.sauvegarde.Recordable;
+import fixis.sauvegarde.SystemeDeSauvegarde;
+
+public class Actif extends Adherent implements Recordable {
 
     private Entreprise employeur;
 
@@ -16,11 +19,20 @@ public class Actif extends Adherent {
         super(nom, prenom, dateNaissance);
 
         setEmployeur(emp);
+
+        //Autoabonnement
+        SystemeDeSauvegarde.getInstance().addRecordable( this );
     }
 
     @Override
     public Location louer(Ressource res) {
         System.out.println("Location plein tarif de " + res + " par " + this);
         return null;
+    }
+
+    @Override
+    public boolean save() throws Exception {
+        System.out.println("Sauvegarde de l'actif " + this + " dans la base de données.");
+        return true;
     }
 }
