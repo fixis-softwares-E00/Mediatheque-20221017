@@ -21,7 +21,7 @@ public class ScenarioAdherent {
 
             try {
                 //On supprime la date de naissance de adh1.
-                adh1.setDateNaissance(null);
+               // adh1.setDateNaissance(null);
 
                 //Lui demander le nom du jour de sa naissance.
                 System.out.println(adh1.getDateNaissance()
@@ -91,6 +91,10 @@ public class ScenarioAdherent {
             Object obj2 = etu1;
 
 
+            //Transformer un actif en entreprise via un transformateur.
+            TransformateurActifEntreprise transfo1 = new TransformateurActifEntreprise();
+            Entreprise entreprise = transfo1.transformer( act1) ;
+            System.out.println( entreprise.getRaisonSociale() );
         }
         catch ( Exception exc)
         {

@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc4d8e8-0a10-49f3-ac2e-b5b22b0294ba" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fixis/sauvegarde/Recordable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fixis/sauvegarde/SystemeDeSauvegarde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Livre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioConnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioSauvegarde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/TestForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/TestForm.java" afterDir="false" />
+    <list default="true" id="5bc4d8e8-0a10-49f3-ac2e-b5b22b0294ba" name="Changes" comment="3ème commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Transformateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/TransformateurActifEntreprise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Actif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Actif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioAdherent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioAdherent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
 }]]></component>
@@ -175,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666170839551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3ème commit">
+      <created>1666188206895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666188206895</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +196,7 @@
     <MESSAGE value="commit1" />
     <MESSAGE value="Premier commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="3ème commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="3ème commit" />
   </component>
 </project>
