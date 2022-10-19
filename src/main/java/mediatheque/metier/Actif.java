@@ -12,9 +12,15 @@ public class Actif extends Adherent {
         this.employeur = employeur;
     }
 
-    public Actif(String nom, String prenom, String dateNaissance, Entreprise emp) {
+    public Actif(String nom, String prenom, String dateNaissance, Entreprise emp) throws Exception {
         super(nom, prenom, dateNaissance);
 
         setEmployeur(emp);
+    }
+
+    @Override
+    public Location louer(Ressource res) {
+        System.out.println("Location plein tarif de " + res + " par " + this);
+        return null;
     }
 }

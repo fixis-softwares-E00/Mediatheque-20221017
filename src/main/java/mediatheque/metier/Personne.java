@@ -23,17 +23,15 @@ public class Personne {
     private Carte carte;
 
     //Méthodes
-    public Personne(String nom, String prenom)
-    {
+    public Personne(String nom, String prenom) throws Exception {
         setNom(nom);
         setPrenom(prenom);
         //Création d'une carte et placement de celle-ci dans la poche de la personne
         Carte c1 = new Carte( this );
-        setCarte( null );
+        setCarte( c1 );
     }
 
-    public Personne(String nom, String prenom, String dateNaissance)
-    {
+    public Personne(String nom, String prenom, String dateNaissance) throws Exception {
         this(nom,prenom);
         setDateNaissance( LocalDate.parse(dateNaissance) );
     }
@@ -72,14 +70,14 @@ public class Personne {
         return nom.toUpperCase();
     }
 
-    public void setNom(String propositionNom) {
+    public void setNom(String propositionNom) throws Exception {
 
         //On accepte uniquement les propositions de noms qui contiennent au moins 3 caractères.
         if ( propositionNom.length() >= 3) {
             nom = propositionNom;
         }
         else {
-            System.out.println("La proposition " + propositionNom + " est invalide.");
+            throw new Exception("La proposition " + propositionNom + " est invalide.");
         }
     }
 
