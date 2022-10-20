@@ -1,5 +1,8 @@
 package mediatheque.tests;
 
+import fixis.utils.ToolBox;
+
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Year;
 
@@ -172,7 +175,14 @@ public class TestSyntaxe {
 
         saluer("DUPOND",1);
 
+        //Tirer une valeur comprise entre 64 et 227.
+        int tirage = ToolBox.getRandomValue(1,1);
+        System.out.println( "Valeur aléatoire: " + tirage );
 
+        for (int i=1;i<=10000;i++) {
+            LocalDate dateAleatoire = ToolBox.getRandomLocaleDate(1937, 2022);
+            System.out.println(dateAleatoire);
+        }
     }
 
 

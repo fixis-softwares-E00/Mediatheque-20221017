@@ -1,5 +1,7 @@
 package mediatheque.tests;
 
+import fixis.sauvegarde.SystemeDeSauvegarde;
+import fixis.utils.ToolBox;
 import mediatheque.metier.*;
 import org.omg.Messaging.SyncScopeHelper;
 
@@ -95,6 +97,47 @@ public class ScenarioAdherent {
             TransformateurActifEntreprise transfo1 = new TransformateurActifEntreprise();
             Entreprise entreprise = transfo1.transformer( act1) ;
             System.out.println( entreprise.getRaisonSociale() );
+
+            //Récupération d'un adhérent aléatoire.
+            Adherent adhAleatoire = Adherent.getAdherentAleatoire();
+            System.out.println( "Adhérent aléatoire: " + adhAleatoire);
+
+            //SystemeDeSauvegarde.getInstance().sauvegarder();
+
+            //Objectif: enregistrer 10000 adhérents.
+            //On va créer un objet Runnable en utilisant une classe anonyme.
+            Runnable runnable1 = new Runnable() {
+                @Override
+                public void run() {
+                    for (int i=1; i<10000;i++)
+                    {
+                        try {
+                            Actif act = (Actif) Adherent.getAdherentAleatoire();
+                            act.save();
+                        }
+                        catch ( Exception exc)
+                        {
+                            System.out.println( exc.getMessage() );
+                        }
+                    }
+                }
+            };
+
+            Thread thread1 = new Thread( runnable1 );
+            thread1.start();
+
+            //Création d'un adhérent spécifique pour Noël 2022: promo: quart du tarif.
+            Adherent adhNoel2022 = new Adherent("abcd","def","1999-04-20") {
+                @Override
+                public Location louer(Ressource res) {
+                    System.out.println("Quart du tarif pour "+ this);
+                    return null;
+                }
+            };
+
+            adhNoel2022.louer( null );
+
+            System.out.println("Programme terminé ");
         }
         catch ( Exception exc)
         {

@@ -1,10 +1,26 @@
 package mediatheque.metier;
 
+import fixis.utils.ToolBox;
+
 import java.time.LocalDate;
 
 public abstract class Adherent extends Personne{
 
     private LocalDate dateAdhesion;
+
+
+    public static Adherent getAdherentAleatoire() throws Exception
+    {
+        LocalDate dateAleatoire = ToolBox.getRandomLocaleDate(1937,2021);
+        String suffixe = dateAleatoire.toString().replace("-","");
+
+        Adherent adh = new Actif("ACT"+suffixe,
+                "Prenom"+suffixe,
+                dateAleatoire.toString(),
+                new Entreprise("ent1"));
+
+        return adh;
+    }
 
     public LocalDate getDateAdhesion() {
         return dateAdhesion;

@@ -35,7 +35,7 @@ public class Actif extends Adherent implements Recordable {
 
     @Override
     public boolean save() throws Exception {
-        System.out.println("Sauvegarde de l'actif " + this + " dans la base de données.");
+        //System.out.println("Sauvegarde de l'actif " + this + " dans la base de données.");
 
         //Charger le pilote du SGBD en mémoire vive.
         Class.forName("com.mysql.cj.jdbc.Driver");
