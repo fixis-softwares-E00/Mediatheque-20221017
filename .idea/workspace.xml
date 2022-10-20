@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc4d8e8-0a10-49f3-ac2e-b5b22b0294ba" name="Changes" comment="4ème commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fixis/utils/ToolBox.java" afterDir="false" />
+    <list default="true" id="5bc4d8e8-0a10-49f3-ac2e-b5b22b0294ba" name="Changes" comment="5ème commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fixis/interfacesFonctionnelles/TestInterfacesFonctionnelles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fixis/lambdas/TestLambdas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioStreams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Actif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Actif.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Adherent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/metier/Adherent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioAdherent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/ScenarioAdherent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mediatheque/tests/TestSyntaxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediatheque/tests/TestSyntaxe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="mediatheque.metier" />
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666192215270</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="5ème commit">
+      <created>1666256331557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666256331557</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +212,7 @@
     <MESSAGE value="Second commit" />
     <MESSAGE value="3ème commit" />
     <MESSAGE value="4ème commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4ème commit" />
+    <MESSAGE value="5ème commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="5ème commit" />
   </component>
 </project>
